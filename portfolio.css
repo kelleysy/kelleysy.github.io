@@ -1,0 +1,23 @@
+#container {
+	width: 60%;
+	margin: auto;
+}
+.section {
+
+	border: 1px solid #000000;
+	padding: 30px;
+}
+.title {
+	text-align: center;
+	font-size: 22px;
+	font-family: 'Nixie One', cursive;
+	margin-bottom: 20px;
+}
+#banner {
+	height: 100px;
+	margin-bottom: 20px;
+}
+* {
+	font-family: arial;
+	font-size: 14px;
+}
