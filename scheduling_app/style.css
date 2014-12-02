@@ -1,0 +1,71 @@
+.col-xs-4 {
+	width: 20%;
+}
+body{
+	padding-bottom:50px;
+	font-family: helvetica;
+	font-size: 12px;
+}
+.times{
+	margin-bottom:50px;
+}
+.page-header {
+	border-bottom: 1px solid #000000;
+}
+
+/* checkbox - each time slot */
+.time-slot {}
+.time-slot input { 
+	display:none;
+}
+.time-slot label { 
+  padding:10px 20px; 
+  color:#FFF; 
+  cursor:pointer; 
+  background:#EEE; 
+  border-radius:5px; 
+  transition:0.3s ease all;
+  -moz-transition:0.3s ease all;
+  -webkit-transition:0.3s ease all;
+}
+
+.time-slot input:checked ~ label { 
+  background:#f2dede; 
+  cursor:not-allowed;
+  animation:flashBooked 0.5s ease; 
+  -moz-animation:flashBooked 0.5s ease; 
+  -webkit-animation:flashBooked 0.5s ease; 
+}
+
+.time-slot input:not(:checked) ~ label { 
+  background:#00ccff; 
+  animation:flashAvailable 0.5s ease; 
+  -moz-animation:flashAvailable 0.5s ease; 
+  -webkit-animation:flashAvailable 0.5s ease; 
+}
+
+@keyframes flashBooked {
+  0%, 100% { background:#f2dede; transform:scale(1); }
+  50% 		{ background:#F99090; transform:scale(1.5); }
+}
+@-moz-keyframes flashBooked {
+  0%, 100% { background:#f2dede; transform:scale(1); }
+  50% 		{ background:#F99090; transform:scale(1.5); }
+}
+@-webkit-keyframes flashBooked {
+  0%, 100% { background:#f2dede; transform:scale(1); }
+  50% 		{ background:#F99090; transform:scale(1.5); }
+}
+
+@keyframes flashAvailable {
+  0%, 100% { background:#00ccff; transform:scale(1); }
+  50% 		{transform:scale(1.5); }
+}
+@-moz-keyframes flashAvailable {
+  0%, 100% { background:#00ccff; transform:scale(1); }
+  50% 		{transform:scale(1.5); }
+}
+@-webkit-keyframes flashAvailable {
+  0%, 100% { background:#00ccff; transform:scale(1); }
+  50% 		{transform:scale(1.5); }
+}
